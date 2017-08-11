@@ -7,6 +7,35 @@ complete changelog, see the git history for each version via the version links.
 
 [hex package page]: https://hex.pm/packages/ex_machina
 
+## [3.0.0]
+
+### Documentation Improvements
+
+- Add documentation and typespecs ([#233])
+- Added tutorial for splitting factories into multiple files ([#185])
+
+### Changed
+
+- Strip embeds in `params_for` ([#204])
+- Handle nested associations and embeds in `string_params_for/2` ([#224])
+
+### Fixed
+
+- Fix issues passing maps for embeds in `params_for/2` ([#230])
+- Specify Ecto dependecy once ([#208])
+- Fix error message in `cast_value/3` ([#207])
+- Fix link to latest published docs ([#203])
+
+[3.0.0]: https://github.com/thoughtbot/ex_machina/compare/v2.0.0...v3.0.0
+[#233]: https://github.com/thoughtbot/ex_machina/pull/233
+[#230]: https://github.com/thoughtbot/ex_machina/pull/230
+[#224]: https://github.com/thoughtbot/ex_machina/pull/224
+[#207]: https://github.com/thoughtbot/ex_machina/pull/207
+[#208]: https://github.com/thoughtbot/ex_machina/pull/208
+[#204]: https://github.com/thoughtbot/ex_machina/pull/204
+[#203]: https://github.com/thoughtbot/ex_machina/pull/203
+[#185]: https://github.com/thoughtbot/ex_machina/pull/185
+
 ## [2.0.0]
 
 ### Added
