@@ -36,9 +36,10 @@ defmodule ExMachina.Mixfile do
     [
       {:ex_doc, "~> 0.14", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
-      {:ecto, "~> 2.1", optional: true},
-      {:postgrex, ">= 0.0.0", only: [:test]},
-      {:poison, "~> 3.0", only: :test}
+      {:ecto, "~> 3.0.0-rc.1"},
+      {:postgrex,
+       git: "https://github.com/elixir-ecto/postgrex.git", ref: "6cabc3b", only: [:test]},
+      {:jason, "~> 1.0"}
     ]
   end
 
